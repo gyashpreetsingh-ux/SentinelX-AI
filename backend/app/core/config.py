@@ -13,6 +13,10 @@ class Settings:
     YEAR: int = 2026
     VERSION: str = "1.0.0"
     
+    # Server
+    PORT: int = int(os.getenv("PORT", 8088))
+    HOST: str = os.getenv("HOST", "0.0.0.0")
+
     # Security & Auth
     SECRET_KEY: str = os.getenv("JWT_SECRET", "sentinelx-cyber-defense-jwt-secret-key-2026-yashpreet")
     ALGORITHM: str = "HS256"
@@ -25,7 +29,7 @@ class Settings:
     CORS_ORIGINS: List[str] = [
         origin.strip() for origin in os.getenv(
             "CORS_ORIGINS",
-            "http://localhost:5173,http://localhost:3000,http://127.0.0.1:5173,http://localhost:4173"
+            "http://localhost:5188,http://localhost:3100,http://127.0.0.1:5188,http://localhost:5173,http://localhost:3000,http://127.0.0.1:5173"
         ).split(",")
     ]
     

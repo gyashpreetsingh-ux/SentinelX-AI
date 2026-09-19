@@ -7,13 +7,13 @@ services:
       dockerfile: Dockerfile
     container_name: sentinelx-backend
     ports:
-      - "8000:8000"
+      - "8088:8088"
     environment:
-      - PORT=8000
+      - PORT=8088
       - HOST=0.0.0.0
       - DATABASE_URL=sqlite:///./sentinelx.db
       - JWT_SECRET=sentinelx-cyber-defense-jwt-secret-key-2026-yashpreet
-      - CORS_ORIGINS=http://localhost:5173,http://localhost:3000,http://127.0.0.1:5173
+      - CORS_ORIGINS=http://localhost:5188,http://localhost:3100,http://127.0.0.1:5188
     volumes:
       - ./backend/sentinelx.db:/app/sentinelx.db
     restart: unless-stopped
@@ -24,7 +24,7 @@ services:
       dockerfile: Dockerfile
     container_name: sentinelx-frontend
     ports:
-      - "3000:80"
+      - "3100:80"
     depends_on:
       - backend
     restart: unless-stopped

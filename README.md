@@ -156,21 +156,21 @@ cd "c:\Users\Nihal Singh\Desktop\SentinelX-AI"
 # Activate Python 3.12 virtual environment
 .\backend\venv\Scripts\Activate.ps1
 
-# Run FastAPI backend
-python -m uvicorn app.main:app --app-dir backend --reload --port 8000
+# Run FastAPI backend on port 8088
+python -m uvicorn app.main:app --app-dir backend --reload --port 8088
 ```
-Backend will start on: `http://localhost:8000`  
-Swagger API Docs: `http://localhost:8000/docs`
+Backend will start on: `http://localhost:8088`  
+Swagger API Docs: `http://localhost:8088/docs`
 
 ### 2. Start Frontend
 In a new terminal:
 ```powershell
 cd "c:\Users\Nihal Singh\Desktop\SentinelX-AI\frontend"
 
-# Start Vite dev server
+# Start Vite dev server on port 5188
 npm run dev
 ```
-Frontend will be live at: `http://localhost:5173`
+Frontend will be live at: `http://localhost:5188`
 
 ---
 

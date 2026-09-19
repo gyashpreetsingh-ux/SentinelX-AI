@@ -1,8 +1,8 @@
 # SentinelX AI — REST API Reference
 
 **Author**: Yashpreet Singh (2026)  
-**Base URL**: `http://localhost:8000`  
-**Interactive Docs**: `http://localhost:8000/docs` (Swagger UI)
+**Base URL**: `http://localhost:8088`  
+**Interactive Docs**: `http://localhost:8088/docs` (Swagger UI)
 
 ---
 
