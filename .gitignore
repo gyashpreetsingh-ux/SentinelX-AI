@@ -28,6 +28,8 @@ yarn-error.log*
 *.swp
 *.swo
 
-# OS
+# OS & Binaries
 .DS_Store
 Thumbs.db
+*.exe
+cloudflared.exe
