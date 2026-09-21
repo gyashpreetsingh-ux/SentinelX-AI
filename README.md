@@ -145,7 +145,7 @@ SentinelX-AI/
 ## 🚀 Running Locally
 
 ### Prerequisites
-- Python 3.12+
+- Python 3.12+ supporting
 - Node.js v18+ and npm
 
 ### 1. Start Backend
